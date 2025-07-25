@@ -24,7 +24,7 @@ bangla-rag/
 │   └── model.py
 │
 ├── storage/
-│   └── storage.py
+│   └── store.py
 │
 ├── main.py
 ├── requirements.txt
