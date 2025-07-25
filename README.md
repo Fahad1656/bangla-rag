@@ -7,7 +7,7 @@ A **Bangla Retrieval-Augmented Generation (RAG)** system designed for **deep sem
 ## 🧱 Project Structure
 
 ```
-bangla-rag/
+├── bangla-rag/
 │
 ├── api_routes/
 │   ├── interference.py
@@ -30,7 +30,6 @@ bangla-rag/
 ├── requirements.txt
 ├── .env.example
 ├── README.md
-
 ```
 
 ---
@@ -70,7 +69,7 @@ Visit the server at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ### ✅ API Endpoint:
 
-**`POST /api/ask`**
+**POST /api/ask**
 
 ---
 
@@ -86,7 +85,7 @@ Content-Type: application/json
 
 ```json
 {
-  "question": "কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?"
+  "question": "কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?"
 }
 ```
 
@@ -104,7 +103,7 @@ Content-Type: application/json
 
 ```json
 {
-  "question": "বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?"
+  "question": "বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?"
 }
 ```
 
@@ -115,6 +114,25 @@ Content-Type: application/json
   "answer": "১৫ বছর",
   "language prompted": "বাংলা",
   "confidence": 1.0
+}
+```
+
+### Request Body (Yet Another Bangla Question):
+
+```json
+{
+  "question": "অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?
+"
+}
+```
+
+### Response:
+
+```json
+{
+  "answer": "শুম্ভুনাথ",
+  "language prompted": "বাংলা",
+  "confidence": 0.98
 }
 ```
 
