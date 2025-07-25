@@ -7,22 +7,30 @@ A **Bangla Retrieval-Augmented Generation (RAG)** system designed for **deep sem
 ## 🧱 Project Structure
 
 ```
-├── bangla-rag/
+bangla-rag/
 │
 ├── api_routes/
-│   └── interference.py
-│       └── inference.py
+│   ├── interference.py
+│   └── inference.py
+│
 ├── data_preprocessing/
 │   ├── extract.py
 │   └── preprocess_data.py
+│
 ├── rag_pipeline/
 │   └── rag.py
+│
 ├── models/
 │   └── model.py
+│
+├── storage/
+│   └── storage.py
+│
 ├── main.py
 ├── requirements.txt
 ├── .env.example
 ├── README.md
+
 ```
 
 ---
